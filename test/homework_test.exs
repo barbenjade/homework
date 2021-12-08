@@ -126,7 +126,7 @@ defmodule HomeworkTest do
     else
       IO.puts "No Log Errors for tag test"
     end
-    if Enum.count(assert_two) > 0, do: IO.puts "Errors: Assert Three - #{assert_three}", else: IO.puts "Alerts tests passed"
+    if Enum.count(assert_three) > 0, do: IO.puts "Errors: Assert Three - #{assert_three}", else: IO.puts "Alerts tests passed"
   end
 
   test "takes screen shot of JavaScript error page"  do
