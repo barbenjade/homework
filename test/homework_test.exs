@@ -15,7 +15,7 @@ defmodule HomeworkTest do
     end
   end
 
-  #This function takes a dynamic number of items with a certain tag and performs actions on pop up modals
+  #This method takes a dynamic number of items with a certain tag and performs actions on pop up modals
   def click_buttons(t) do
     listone = find_all_elements(:tag, t)
     number_of = Enum.count(listone)
