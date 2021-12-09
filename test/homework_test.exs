@@ -23,11 +23,11 @@ defmodule HomeworkTest do
         iter = to_string(x)
         iter2 = String.at(iter, -1)
         if iter2 == number_of do
-          click({:xpath, "//li[#{iter2}]/button"})
+          click({:xpath, "//li[#{iter2}]/#{t}"})
           input_into_prompt("First Test for prompt")
           accept_dialog()
         else
-          click({:xpath, "//li[#{iter2}]/button"})
+          click({:xpath, "//li[#{iter2}]/#{t}"})
           accept_dialog()
         end
     end
